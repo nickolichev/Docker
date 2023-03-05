@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  postgres:
+      image: postgres:12-alpine
+      ports:
+        - '5432:5432'
+      volumes:
+        - ./data:/var/lib/postgres_12-alpine
+      environment:
+        POSTGRES_DATABASE: alfabank
+        POSTGRES_USER: nickolichev
+        POSTGRES_PASSWORD: 9mREsvXDs
